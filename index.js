@@ -2,9 +2,16 @@ import express from "express"
 import crypto from "node:crypto"
 import {generateRegistrationOptions, verifyRegistrationResponse, generateAuthenticationOptions, verifyAuthenticationResponse} from "@simplewebauthn/server"
 
+import cors from "cors";
+
 if (!globalThis.crypto) {
     globalThis.crypto = crypto
 }
+
+
+
+app.use(cors());
+
 
 
 const PORT = 3000
