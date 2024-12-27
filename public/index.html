@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passkeys</title>
+    <title>Password-less Authentication</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Welcome to Password-less Authentication</h1>
+        <p>Click the button below to sign up and authenticate using passkeys.</p>
+        <button onclick="redirectToSignup()">Sign Up</button>
+    </div>
+
+    <script>
+        function redirectToSignup() {
+            // Redirect the user to the signup.html page
+            window.location.href = 'signup.html';
+        }
+    </script>
 </body>
 </html>
