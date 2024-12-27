@@ -22,7 +22,7 @@
             form.addEventListener('submit',async e=>{
                 e.preventDefault()
 
-                const response = await fetch('/register',{
+                const response = await fetch('https://web-authentication-hebiesd52-ankits-projects-9e9465c9.vercel.app/register',{
                     method:'POST',
                     headers:{
                         'Content-Type':'application/json'
@@ -39,7 +39,7 @@
 
                 const {id} = result
 
-                window.location.replace(`http://localhost:3000/profile.html?userId=${id}`)
+                window.location.replace(`https://web-authentication-hebiesd52-ankits-projects-9e9465c9.vercel.app/profile.html?userId=${id}`)
             })
     </script>
 </body>
